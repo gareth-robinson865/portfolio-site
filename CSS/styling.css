@@ -10,7 +10,6 @@ main {
     display: grid;
     grid-template-rows: repeat(30, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    height: 100vh;
     font-size: 16px;
 }
 
@@ -107,9 +106,17 @@ main {
 }
 
 #skills {
-    grid-column: 1 span 3;
+    grid-column: 1 / span 3;
     grid-row: 3 / span 1;
     background: red;
+}
+
+#icon-holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2em;
 }
 
 #contact {
