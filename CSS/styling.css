@@ -11,6 +11,7 @@ main {
     grid-template-rows: repeat(30, 1fr);
     grid-template-columns: repeat(2, 1fr);
     font-size: 16px;
+    height: 100vh;
 }
 
 /*keyframe animations*/
@@ -57,10 +58,10 @@ main {
 
 /*styling the main content*/
 #main-content {
-    grid-row: 3 / span 25;
+    grid-row: 3 / span 26;
     grid-column: 1 / span 2;
     display: grid;
-    grid-template-rows: 1fr .5fr .5fr .5fr;
+    grid-template-rows: 1fr .5fr .5fr;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
 
@@ -87,6 +88,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-top: 20px;
 }
 
 #image-container {
@@ -131,11 +133,12 @@ main {
     align-items: center;
     font-size: 4em;
     padding-bottom: 20px;
+    overflow: hidden;
 }
 
 /*footer styling*/
 #footer {
     background: black;
     grid-column: 1 / span 2;
-    grid-row: 28 / span 2;
+    grid-row: 28 / span 8;
 }
